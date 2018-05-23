@@ -1,0 +1,10 @@
+
+<h2 class="fs-title">Solicitud de credito</h2>
+<h3 class="fs-subtitle">Ingresa tus datos financieros</h3>
+<input type="text" placeholder="Nombre empresa"[(ngModel)]="credit.nameCompany"/>
+<input type="number" placeholder="NIT empresa" [(ngModel)]="credit.nitCompany"/>
+<input type="number" placeholder="salario actual" [(ngModel)]="credit.salary" />
+<h2>Fecha de ingreso</h2>
+<input type="date" placeholder="Fecha de ingreso" min="2018-05-23" id="dateLog" [(ngModel)]="credit.dateLog" />
+<button class="previous action-button" (click)="return();" id="btn_credit">Previous</button>
+<button class="next action-button" (click)="validateData();">Next</button>

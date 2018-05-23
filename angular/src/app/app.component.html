@@ -1,0 +1,19 @@
+
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+  <li class="active">Registro</li>
+  <li>Solicitud de credito</li>
+  <li>respuesta del credito</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+      <app-client (dataClient)="getDataClient($event)"></app-client>
+  </fieldset>
+  <fieldset>
+     <app-credit [client]="cliente" (dataCredit)="getAllData($event)"></app-credit>
+  </fieldset>
+  <fieldset>
+      <app-request-credit [data]="allData"></app-request-credit>
+  </fieldset>
+</form>

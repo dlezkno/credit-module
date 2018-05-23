@@ -1,0 +1,9 @@
+
+<h2 class="fs-title">Registro</h2>
+<h3 class="fs-subtitle">Ingresa tus datos personales</h3>
+<input type="number" placeholder="Numero de documento" [(ngModel)]="client.document"/>
+<input type="text" placeholder="Nombre" [(ngModel)]="client.name" required/>
+<input type="text" placeholder="Apellido" [(ngModel)]="client.lastName" required />
+<input type="date" placeholder="Fecha de nacimiento" [(ngModel)]="client.birthDate" required />
+<button id="btn_client" (click)="validateData();" class="next action-button">Next</button>
+

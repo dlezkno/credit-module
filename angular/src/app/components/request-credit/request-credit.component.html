@@ -1,0 +1,10 @@
+<h2 class="fs-title">respuesta del credito</h2>
+<h2 *ngIf="data != indefined && data.status == false"  class="fs-title">Hola 
+    <strong>{{data.client.name}}</strong> 
+    lamentamos informarte que tu credito no fue aprobado
+</h2>
+<h2 *ngIf="data != indefined && data.status == true"  class="fs-title">Hola 
+    <strong>{{data.client.name}}</strong> 
+    nos alegra informarte que tu credito fue aprobado por 
+    <strong>{{data.amount}}</strong>
+</h2>
