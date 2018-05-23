@@ -20,3 +20,6 @@
 - descargar el archivo que se encuentra en la carpeta db "script.sql"
 - ejecutar el script.sql
 - verificar que en la configuracoin de sql server tenga habilitados los protocoles TCP/IP
+
+
+# se agrego un video en la carpeta "video prueba" para ver la funcionalidad del la aplicacion
